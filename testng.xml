@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE xml>
+<suite name="Baidu" parrallel="false">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="cn.automation.MySelenium.AutomationTestCommon.test.RetryListener"/>
+        <listener class-name="cn.automation.MySelenium.AutomationTestCommon.test.TestListener"/>
+    </listeners>
+    <test name="Login System">
+        <classes>
+            <class name="cn.automation.MySelenium.AutomationTestCase.Case01"/>
+        </classes>
+    </test>
+</suite>
